@@ -3,11 +3,11 @@
 
 Physics Engineering Journey
 
-##Goal
+## Goal
 
 Write a research paper on Newtons Law of cooling while using python to automate data retrieval 
 
-##Repository Structure
+## Repository Structure
 
 projects/
 data/
@@ -15,7 +15,7 @@ graphs/
 research/
 docs/
 
-##Skills
+## Skills
 
 Python
 Git
@@ -23,11 +23,11 @@ Engineering Mathematics
 Data Analysis
 Scientific Computing
 
-##Current Project
+## Current Project
 
 Temperature Converter 
 
-##Upcoming Projects:
+## Upcoming Projects:
 
 -physics calculator
 -temperature logger
