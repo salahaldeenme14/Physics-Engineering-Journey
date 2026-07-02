@@ -1,0 +1,76 @@
+while True:
+
+    print (
+    '1. Force\n'
+    '2. Density\n'
+    '3. Velocity\n'
+    '4. Momentum\n'
+    '5. Kinetic Energy')
+
+    operation = input('Select the operation you want to perform (1-5): ')
+    
+    
+    def force (mass, acceleration):
+        return mass * acceleration
+
+    def density (mass, volume):
+        return mass / volume
+
+    def speed (distance, time):
+        return distance / time
+
+    def momentum (mass, speed):
+        return mass * speed
+
+    def kinetic_energy (mass, speed):
+        return 0.5 * mass * speed ** 2
+
+    
+        
+    if operation == '1':
+            try:
+                mass = float(input('Enter the mass (kg): '))
+                acceleration = float(input('Enter the acceleration: '))
+                print('The force is:', force(mass, acceleration), 'N')
+            except ValueError:
+                print('Please enter valid numbers for mass and acceleration.w')
+
+    if operation == '2':
+            try:
+                mass = float(input('Enter the mass (kg):'))
+                volume = float(input('Enter the volume:'))
+                if mass <= 0 or volume <= 0:
+                    print('Mass and volume must be greater than zero.')
+                else:
+                    print('The density is:', density(mass, volume), 'kg/m^3')
+            except ValueError:
+                print('Please enter valid numbers for mass and volume.')
+            if mass <= 0 or volume <= 0:
+                print('Mass and volume must be greater than zero.')
+
+    if operation == '3':
+            try:
+                distance = float(input('Enter the distance (m):'))
+                time = float(input('Enter the time (s):'))
+                if time <= 0:
+                    print('Time must be greater than zero.')
+                else:
+                    print('The speed is:', speed(distance, time), 'm/s')  
+            except ValueError:
+                print('Please enter valid numbers for distance and time.')
+
+    if operation == '4':
+            try:
+                mass = float(input('Enter the mass (kg):'))
+                speed_value = float(input('Enter the speed (m/s):'))
+                print('The momentum is:', momentum(mass, speed_value), 'kg*m/s')
+            except ValueError:
+                print('Please enter valid numbers for mass and speed.')
+
+    if operation == '5':
+            try:
+                mass = float(input('Enter the mass (kg):'))
+                speed_value = float(input('Enter the speed (m/s):'))
+                print('The kinetic energy is:', kinetic_energy(mass, speed_value), 'J')
+            except ValueError:
+                print('Please enter valid numbers for mass and speed.')
