@@ -16,27 +16,26 @@ research/
 docs/
 
 ## Skills
-"""
-Python
-Git
-Engineering Mathematics
-Data Analysis
-Scientific Computing
-"""
+
+* Python
+* Git
+* Engineering Mathematics
+* Data Analysis
+* Scientific Computing
 
 ## Current Project
 
 Temperature logger
 
 ## Upcoming Projects:
-"""
--CSV-Reader
--Graph-Generator
--Population Growth Simulator
--Falling Object Simulator
--Projectile Motion Simulator
--Experimental Data Analyzer
--Newton's Law of Cooling Predictor
-"""
+
+- CSV-Reader
+- Graph-Generator
+- Population Growth Simulator
+- Falling Object Simulator
+- Projectile Motion Simulator
+- Experimental Data Analyzer
+- Newton's Law of Cooling Predictor
+
 
 
