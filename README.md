@@ -16,21 +16,20 @@ research/
 docs/
 
 ## Skills
-
+"""
 Python
 Git
 Engineering Mathematics
 Data Analysis
 Scientific Computing
+"""
 
 ## Current Project
 
-Temperature Converter 
+Temperature logger
 
 ## Upcoming Projects:
-
--physics calculator
--temperature logger
+"""
 -CSV-Reader
 -Graph-Generator
 -Population Growth Simulator
@@ -38,5 +37,6 @@ Temperature Converter
 -Projectile Motion Simulator
 -Experimental Data Analyzer
 -Newton's Law of Cooling Predictor
+"""
 
 
