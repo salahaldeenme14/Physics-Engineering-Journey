@@ -1,0 +1,30 @@
+List = input ("Please enter numbers separated by commas: ").split(',')
+num = [float(num) for num in List]
+
+def find_mean(num):
+    return sum(num) / len(num)
+
+def find_max(num):
+    max_value = float(num[0])
+    for n in num:
+        if float(n) > max_value:
+            max_value = float(n)
+    return max_value
+
+def find_min(num):
+    min_value = float(num[0])
+    for n in num:
+        if float(n) < min_value:
+            min_value = float(n)
+    return min_value
+try:
+    mean_value = find_mean(num)
+    max_value = find_max(num)
+    min_value = find_min(num)
+
+    print("The mean of the numbers is:", mean_value)
+    print("The maximum of the numbers is:", max_value)
+    print("The minimum of the numbers is:", min_value)
+
+except ValueError:
+    print("Please enter valid numbers.")
