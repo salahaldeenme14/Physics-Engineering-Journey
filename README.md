@@ -25,17 +25,17 @@ docs/
 
 ## Current Project
 
-Temperature logger
+- Temperature Logger
 
 ## Upcoming Projects:
 
-- CSV-Reader
-- Graph-Generator
-- Population Growth Simulator
-- Falling Object Simulator
-- Projectile Motion Simulator
-- Experimental Data Analyzer
-- Newton's Law of Cooling Predictor
+- CSV readers
+- Temperature Graph Plotter
+- Newton's Law of Cooling Simulator
+- Rasberry Pi Pico Data Acquisition System
+- Experimantal data Analyzer
+- Newton's Law of Cooling Research Platform
+
 
 
 
