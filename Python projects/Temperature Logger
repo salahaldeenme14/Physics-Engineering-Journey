@@ -1,0 +1,21 @@
+import time
+
+User_Input = float(input("Enter the temperature reading: "))
+log = [User_Input]
+
+start_time = time.perf_counter()
+while True:
+    New_Temperature = (input("Enter the temperature reading (or type 'exit' to finish): "))
+    if New_Temperature.lower() == 'exit':
+        print (log)
+        break
+    
+    try:
+        log.append((round(time.perf_counter() - start_time, 2),float(New_Temperature)))
+
+    except ValueError:
+        print("Invalid input. Please enter a numeric value for temperature or 'exit' to finish.")
+
+
+
+        
