@@ -21,6 +21,7 @@ This project introduced the fundamentals of Python programming. Although simple,
 ## Next Objective
 Continue advancing in python and develop a Physics Formula Calculator capable of calculating quantities such as force, speed, density, momentum, and kinetic energy.
 
+
 # Project 2 – Physics Formula Calculator
 **Date Completed:** 11 July 2026
 
@@ -90,5 +91,34 @@ Instead of using Python's built-in `max()` and `min()` functions, I created my o
 
 Although this project analyzes manually entered temperature data rather than collecting measurements from a sensor, it represents an important milestone in my learning journey. It demonstrates how numerical data can be processed, summarized, and validated using Python. These skills will be expanded in future projects involving automated data logging, graphing, and scientific simulations for my Newton's Law of Cooling investigation.
 
- 
+
+# Project 4 – Temperature Logger
+**Date Completed:**  July 2026
+
+## Evidence
+Repository:
+python-projects/project-04-Temperature Logger.py
+
+## Objective
+Develop a Python program that records temperature readings over time and stores them for later analysis. This project serves as a stepping stone toward collecting real experimental data for my Newton's Law of Cooling research.
+
+## Skills Learned
+- Lists
+- Loops
+- Functions
+- User input validation
+- Data storage
+- Exception handling
+- Organising a larger Python program
+
+## Challenges
+- Ensuring only valid numerical temperatures were accepted.
+- Keeping the program organised as it became more complex.
+- Recording multiple readings without losing previous data.
+
+## Reflection
+This project introduced me to the fundamentals of data collection, which is essential for scientific programming. I learned how to store and manage measurements in Python and began thinking about how software can support real experiments. These skills will be directly applied when I build my Raspberry Pi Pico temperature monitoring system for my Newton's Law of Cooling investigation.
+
+## Next Objective
+Code a program simmiler to the Physics calculator that would allow me to manually input temperature data and apply different functions to it which will enhance my idea of
 
