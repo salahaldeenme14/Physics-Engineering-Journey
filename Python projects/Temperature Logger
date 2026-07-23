@@ -1,4 +1,5 @@
 import time
+import os
 import csv
 
 User_Input = float(input("Enter the temperature reading: "))
@@ -19,16 +20,22 @@ while True:
 
 csv_filename = str(input("Please enter a file name: "))
 
-try:
-    with open(csv_filename, 'r') as file:
-        pass
 
-except OSError:
+if os.path.isfile(csv_filename):
+    print(
+        f"Error: The file '{csv_filename}' already exists. Data was not exported to prevent overwriting."
+    )
+else:
+    try:
+        with open(csv_filename, "w", newline="", encoding="utf-8") as file:
+            csv_writer = csv.writer(file)
     
-    with open(csv_filename, 'w', newline='', encoding= 'utf-8') as file:
-        csv_writer = csv.writer(file)
-    csv_writer.writerow["Elapsed_Time", "Temperature"]
-    csv_writer.writerows(log)
+     
+            csv_writer.writerow(["Elapsed_Time", "Temperature"])
+            csv_writer.writerows(log)
 
-print(f"Success! Data exported to {csv_filename}")
+        print(f"Success! Data exported to {csv_filename}")
+
+    except OSError as e:
+        print(f"Error: Could not write file due to a system error: {e}")
         
