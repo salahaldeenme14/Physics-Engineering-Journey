@@ -1,7 +1,8 @@
 import time
+import csv
 
 User_Input = float(input("Enter the temperature reading: "))
-log = [User_Input]
+log = [(0.0,User_Input)]
 
 start_time = time.perf_counter()
 while True:
@@ -16,6 +17,18 @@ while True:
     except ValueError:
         print("Invalid input. Please enter a numeric value for temperature or 'exit' to finish.")
 
+csv_filename = str(input("Please enter a file name: "))
 
+try:
+    with open(csv_filename, 'r') as file:
+        pass
 
+except OSError:
+    
+    with open(csv_filename, 'w', newline='', encoding= 'utf-8') as file:
+        csv_writer = csv.writer(file)
+    csv_writer.writerow["Elapsed_Time", "Temperature"]
+    csv_writer.writerows(log)
+
+print(f"Success! Data exported to {csv_filename}")
         
