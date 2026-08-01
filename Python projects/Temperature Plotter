@@ -1,0 +1,36 @@
+import csv
+import matplotlib.pyplot as plt
+
+x = []
+y = []
+
+x_label = "x_axis"
+y_label = "y_axis"
+
+file_name = input("Please enter a file_name: ")
+success = False
+
+try:
+    with open (file_name, 'r', newline='', encoding= 'utf-8') as file:
+        csv_reader = csv.DictReader(file)
+
+        x_label = csv_reader.fieldnames[0]
+        y_label = csv_reader.fieldnames[1]
+        
+        for row in csv_reader:
+            x.append(float(row[x_label]))
+            y.append(float(row[y_label]))
+        
+    success = True
+           
+except:
+    print('File could not be found')
+
+if success:
+    plt.plot(x, y, marker='o', linestyle='-', color='b')
+    plt.xlabel(x_label)
+    plt.ylabel(y_label)
+    plt.title("Temperature Log Over Time")
+
+    plt.show()
+
