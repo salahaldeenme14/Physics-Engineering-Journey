@@ -147,3 +147,41 @@ This project strengthened my understanding of file handling and data visualisati
 ## Next Objective
 All the past projects have been another stepping stone added to help with the upcoming Newtons cooling Law simulator. Hopefully the next project will allow users to input temperature values, then used to simulate and plot temperature decay through time. 
 
+
+# Project 6 – Newton's Law of Cooling Simulator
+**Date completed** 2 august 2026
+
+## Evidence
+Repository:
+* [Newton's Cooling Law Simulator.py](Python projects/Newton's Cooling Law Simulator.py)
+
+## Objective
+To develop a Python program that models Newton's Law of Cooling by calculating the time required for an object to cool to a specified target temperature and visualising the cooling process using a temperature-versus-time graph.
+
+## Skills Learned
+
+- Used **NumPy's** `np.exp()` function to model exponential cooling.
+- Used **NumPy's** `np.log()` function to calculate cooling time analytically.
+- Created a reusable function with parameters and return values.
+- Implemented **input validation** to prevent invalid temperature values.
+- Generated simulation time steps using `numpy.arange()`.
+- Stored simulated data in Python lists for plotting.
+- Produced scientific graphs using **Matplotlib**.
+- Combined mathematics, programming, and data visualisation into one application.
+
+## Challenges
+- Translating the mathematical equation of Newton's Law of Cooling into Python code.
+- Understanding how logarithmic and exponential functions are used in scientific programming.
+- Preventing invalid user inputs that would produce impossible results.
+- Ensuring the simulation generated temperatures only up to the calculated cooling time.
+- Making the graph accurately represent the cooling process.
+
+## Reflection
+This project was my first complete scientific simulation. It showed me how mathematical equations can be transformed into working computer programs that model real physical systems. I became more confident using NumPy for scientific calculations and gained a better understanding of how Python can be applied to engineering and physics problems. Completing this project also gave me a solid theoretical foundation for my Newton's Law of Cooling research.
+
+## Next Objective
+Develop a program that imports experimental temperature data from CSV files and compares it with the theoretical cooling model. This will allow me to estimate the cooling constant from real experiments and evaluate how accurately Newton's Law of Cooling predicts observed cooling behaviour.
+
+
+
+
