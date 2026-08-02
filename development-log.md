@@ -1,9 +1,9 @@
-# Project 1 - Temperature Calculator
+# Project 1 - Temperature Converter
 **Date Completed:** 1 july 2026
 
 ## Evidence
 Repository:
-python-projects/project-01-temperature-converter.py
+[Temperaure Converter](Python%20projects/Temperature%20Converter)
 
 ## Objective
 Begin learning Python and complete the first milestone project.
@@ -27,7 +27,7 @@ Continue advancing in python and develop a Physics Formula Calculator capable of
 
 ## Evidence
 Repository:
-python-projects/project-02-Physics-Calculator
+[Physics Calculator](Python%20projects/Physics%20calculator)
 
 ## Objective
 Develop a Python program that calculates common physics equations quickly and accurately, while reinforcing my understanding of the formulas used in IGCSE Physics.
@@ -54,7 +54,7 @@ Use the programming skills gained from this project to build more advanced scien
 
 ## Evidence
 Repository:
-python-projects/project-03-Temperature-Statistics Calculator.py
+[Temperaure Statistics Calculator](Python%20projects/Temperature%20Statistics%20Calculator)
 
 ## Objectives
 - Accept multiple temperature readings from the user.
@@ -92,7 +92,7 @@ Although this project analyzes manually entered temperature data rather than col
 
 ## Evidence
 Repository:
-python-projects/project-04-Temperature-Logger.py
+[Temperaure Logger](Python%20projects/Temperature%20Logger)
 
 ## Objective
 Develop a Python program that records temperature readings over time and stores them for later analysis. This project serves as a stepping stone toward collecting real experimental data for my Newton's Law of Cooling research.
@@ -123,7 +123,7 @@ Code a program simmiler to the Physics calculator that would allow me to manuall
 
 ## Evidence
 Repository:
-python-projects/project-05-Temperature-Plotter.py
+[Temperaure plotter](Python%20projects/Temperature%20Plotter)
 
 ## Objective
 Develop a Python program that imports temperature data from a CSV file and visualises it as a graph using Matplotlib. The program should automatically detect the column headings, plot the data, and handle invalid file names gracefully
@@ -153,7 +153,7 @@ All the past projects have been another stepping stone added to help with the up
 
 ## Evidence
 Repository:
-[Newton's Cooling Law Simulator](Python%20projects/Newton's%20Cooling%20Law%20Simulator.py)
+[Newton's Cooling Law Simulator](Python%20projects/Newton's%20Cooling%20Law%20Simulator)
 
 ## Objective
 To develop a Python program that models Newton's Law of Cooling by calculating the time required for an object to cool to a specified target temperature and visualising the cooling process using a temperature-versus-time graph.
@@ -181,7 +181,3 @@ This project was my first complete scientific simulation. It showed me how mathe
 
 ## Next Objective
 Develop a program that imports experimental temperature data from CSV files and compares it with the theoretical cooling model. This will allow me to estimate the cooling constant from real experiments and evaluate how accurately Newton's Law of Cooling predicts observed cooling behaviour.
-
-
-
-
