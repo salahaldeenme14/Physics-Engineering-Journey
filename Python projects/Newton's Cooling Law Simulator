@@ -1,0 +1,43 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+#User input 
+print('select input unit (seconds, minutes)')
+unit = input("Enter unit: ")
+print('Please input the following')
+ambient_temp = float(input("room temperature: "))
+object_temp = float(input("objects temperature: "))
+target_temp = float(input("target temperature: "))
+cooling_constant = float(input(f"objects cooling constant per {unit}: "))
+
+x_values = []
+y_values = []
+
+def time_taken(T_env, T0, k, T_t):
+    if T_t > T_env and T_t < T0:
+        cooling_time = -(1 / k) * np.log((T_t - T_env) / (T0 - T_env))
+        return cooling_time
+
+    elif T_t <= T_env:
+        print("Error: target temperature must be greater than ambient temperature.")
+        return None
+
+    else:
+        print("Error: target temperature cannot be higher than the initial object temperature.")
+        return None
+
+cooling_time = time_taken(ambient_temp, object_temp, cooling_constant, target_temp)
+
+timestep = np.arange(0, round(cooling_time, 0), 1)
+for i in timestep:
+    t = float(i)
+    y = ambient_temp + (object_temp - ambient_temp ) * np.exp(-cooling_constant * t)
+    x_values.append(t)
+    y_values.append(y)
+
+print(f"Time taken to reach target temperature: {round(cooling_time, 2)} {unit}")
+plt.plot(x_values, y_values, marker='o', markersize=1)
+plt.title("Newton's Cooling Law")
+plt.xlabel(f"Time ({unit})")
+plt.ylabel("Temperature (°C)")
+plt.show()
