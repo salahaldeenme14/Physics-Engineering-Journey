@@ -153,7 +153,7 @@ All the past projects have been another stepping stone added to help with the up
 
 ## Evidence
 Repository:
-* [Newton's Cooling Law Simulator.py](Python projects/Newton's Cooling Law Simulator.py)
+[Newton's Cooling Law Simulator](Python%20projects/Newton's%20Cooling%20Law%20Simulator.py)
 
 ## Objective
 To develop a Python program that models Newton's Law of Cooling by calculating the time required for an object to cool to a specified target temperature and visualising the cooling process using a temperature-versus-time graph.
